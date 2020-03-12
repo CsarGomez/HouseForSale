@@ -44,6 +44,9 @@ h4{
 .d-block{
     display: block !important;
 }
+.center-content{
+    max-width: 800px;
+}
 /* buttons */
 .button{
     display: inline-block;
@@ -63,6 +66,10 @@ h4{
     background-color: #71B100;
 }
 /* header */
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 .site-header.start{
     background: url(../img/header.jpg);
     background-position: center center;
@@ -115,11 +122,13 @@ h4{
 .container-announcement{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .announcement{
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #B5B5B5;
     background-color: #F5F5F5;
+    margin-bottom: 2rem;
 }
 .announcement-content{
     padding: 2rem;
@@ -141,6 +150,8 @@ h4{
     padding: 0;
     display: flex;
     justify-content: space-around;
+    max-width: 500px;
+    flex: 1;
 }
 .icon-desc li{
     display: flex;
@@ -246,4 +257,23 @@ h4{
 .copy{
     margin: 0;
     color: #ffffff;
+}
+
+/** about us page **/
+.aboutus-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+.text-aboutus blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+/* announcement */
+.summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
