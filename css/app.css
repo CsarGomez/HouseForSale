@@ -1,0 +1,249 @@
+html{
+    font-size: 62.5%; /*Reset for rem*/
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+/* global */
+img{
+   max-width: 100%; 
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+/* Utilities */
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+.d-block{
+    display: block !important;
+}
+/* buttons */
+.button{
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+.yellow-button{
+    background-color: #E08709;
+}
+.green-button{
+
+    background-color: #71B100;
+}
+/* header */
+.site-header.start{
+    background: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.header-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-container h1{
+    color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.navigation a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.navigation a:hover{
+    color:#71B100;
+}
+.navigation a:last-of-type{
+    margin-right: 0;
+}
+/* about us */
+.icons-aboutus{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    flex-basis: calc ( 33.3% - 1rem );
+    text-align: center;
+}
+.icon h3{
+    text-transform: uppercase;
+}
+/* announcements */
+.container-announcement{
+    display: flex;
+    justify-content: space-between;
+}
+.announcement{
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+}
+.announcement-content{
+    padding: 2rem;
+}
+.announcement-content h3, 
+.announcement-content p{
+    margin: 0;
+}
+.price{
+    color: #71B100;
+    font-weight: 700;
+}
+.show-all{
+    display: flex;
+    justify-content: flex-end;
+}
+.icon-desc{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.icon-desc li{
+    display: flex;
+}
+.icon-desc li img{
+    margin-right: 2rem;
+}
+/* contact */
+.contact-img{
+    display: flex;
+    background-image: url(../img/encuentra.jpg);
+    height: 40rem;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+
+}
+.contact-content{
+    flex: 1;
+    color: #ffffff;
+}
+.contact-content p{
+    font-size: 1.8rem;
+}
+/* inner section */
+.inner-section{
+    display: flex;
+    justify-content: space-between;
+}
+.inner-section .blog{
+    flex-basis: 60%;
+}
+.inner-section .testimonials{
+    flex-basis: calc(40% - 2rem);
+}
+.blog-entry{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.blog-entry:last-of-type{
+    margin-bottom: 0;
+}
+.blog-entry .image{
+    flex-basis: 40%;
+}
+.blog-entry .entry-text{
+    flex-basis: calc(60% - 3rem);
+}
+.entry-text h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.entry-text a {
+    color: #000000;
+    text-decoration: none;
+}
+.entry-text h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71B100;
+    margin-top: 1rem;
+}
+.entry-text span{
+    color: #E08709;
+}
+/* testimonial */
+.testimonial{
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+.testimonial p{
+    text-align: end;
+}
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+.testimonial blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+/* footer */
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.footer-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copy{
+    margin: 0;
+    color: #ffffff;
+}
