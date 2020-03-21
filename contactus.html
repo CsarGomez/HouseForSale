@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House for Sale</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="nav">
+                <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+                <nav class="navigation">
+                    <a href="aboutus.html">About Us</a>
+                    <a href="announcements.html">Announcements</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contactus.html">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="fw-300 text-center">Contact Us</h1>
+    <img src="img/destacada3.jpg" alt="Contact image">
+    <main class="container section center-content">
+        <h2 class="fw-300 text-center">Contact form</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="your name here" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="your email here" required>
+    
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="your phone number here" required>
+    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="your message here"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>House Information</legend>
+                    <label for="options">Sale or Buy</label>
+                    <select name="options" id="options">
+                        <option value="" disabled selected>-- Select --</option>
+                        <option value="sale">Sale</option>
+                        <option value="buy">Buy</option>
+                    </select>
+
+                    <label for="price-range">Price range</label>
+                    <input type="number" id="price-range" min="0" step="100">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+                    <p>How do you want to be contacted?</p>
+                    <div class="contact-option">
+                        <label for="phone">Phone</label>
+                        <input type="radio" name="contact" value="phone" id="phone">
+    
+                        <label for="email-contact">Email</label>
+                        <input type="radio" name="contact" value="email-contact" id="email-contact">
+                    </div>
+
+                    <p>Please schedule your call</p>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" min="09:00" max="17:00">
+            </fieldset>
+
+            <input type="submit" value="Send" class="button green-button">
+        </form>
+    </main>
+
+
+    <footer class="site-footer section">
+        <div class="container footer-container">
+            <nav class="navigation">
+                <a href="aboutus.html">About Us</a>
+                <a href="announcements.html">Announcements</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+                <p class="copy">Todos los derechos reservados 2020 &copy;</p>
+        </div>
+    </footer>

@@ -57,6 +57,10 @@ h4{
     padding: 1rem 3rem;
     margin-top: 3rem;
     text-align: center;
+    border: none;
+}
+.button:hover{
+    cursor: pointer;
 }
 .yellow-button{
     background-color: #E08709;
@@ -273,6 +277,46 @@ h4{
 }
 /* announcement */
 .summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* contact us */
+label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+legend{
+    font-size: 2.4rem;
+    color: #333333;
+}
+form p{
+    font-size: 1.4rem;
+    color: #444444;
+}
+input:not([type="submit"]),textarea, select{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #E1E1E1;
+    margin-bottom: 2rem;
+    border: none;
+    color: #333333;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+select{
+    appearance: none;
+    -webkit-appertance:none;
+}
+textarea{
+    height: 20rem;
+}
+.contact-option{
+    max-width: 30rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
